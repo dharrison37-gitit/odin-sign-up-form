@@ -17,4 +17,111 @@
         "Open Sans",
         "Helvetica Neue",
         sans-serif;
+    font-size: 16px;
+
+    --error: rgb(255, 0, 0);
+}
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+.site-header {
+    background-image: url(../img/kristijan-arsov-tcw3nwoAgvs-unsplash.jpg);
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 30vw;
+    position: relative;
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 90%;
+        margin: 250px auto;
+        background: rgb(0 0 0 / 40%);
+        text-align: center;
+        color: white;
+    }
+
+    .logo img {
+        width: 25%;
+        height: 25%;
+    }
+}
+
+main {
+    background-color: lightgray;
+    width: 70vw;
+}
+
+.upper {
+    width: 750px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 50px;
+    margin-top: 200px;
+}
+
+.form {
+    background-color: white;
+    width: 100%;
+    padding: 20px 50px;
+}
+
+.form section {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 50px;
+}
+
+.bottom {
+    padding: 30px;
+}
+
+.form div {
+    width: 200px;
+}
+
+label {
+    width: 100%;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    width: 100%;
+    height: 30px;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid goldenrod;
+    box-shadow: 1px 1px 1px 1px rgb(143, 128, 46);
+    border-radius: 0.2rem;
+}
+
+input[type="password"]:user-invalid {
+    /* outline: none; */
+    border: 1px solid var(--error);
+}
+
+button {
+    font-size: 1rem;
+    font-weight: 700;
+    width: 200px;
+    height: 50px;
+    border: 1px solid goldenrod;
+    border-radius: 8px;
+    background-color: goldenrod;
+    color: white;
+    margin-bottom: 30px;
 }
